@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Building a Level, Part 1: Dealing with Mutual Dependencies"
-date:   2025-03-05 21:30:00 +0000
+title: "Building a Level, Part 1: Dealing with Mutual Dependencies"
+date: 2025-03-05 21:30:00 +0000
 categories: blog
 ---
 

@@ -6,7 +6,7 @@ categories: blog
 ---
 
 # LOC
-There are a few key code metrics I want to use to inform level design. First, lines of code (LOC). This is used in many visualisation - it's a very easy metric to gather and we can easily imagine how more lines of code might map to greater code complexity. I intend to use LOC to drive the size of rooms. A class with a low line-count will generate a small room and a high line count will generate a big room.
+There are a few key code metrics I want to use to inform level design. First, lines of code (LOC). This is used in many visualisations - it's a very easy metric to gather and we can easily imagine how more lines of code might map to greater code complexity. I intend to use LOC to drive the size of rooms. A class with a low line-count will generate a small room and a high line count will generate a big room.
 
 ### Using DBSCAN to cluster classes by LOC
 In a future iteration I'd like LOC to be a true parameter, used to dynamically determine the size of a room. In the current iteration of HeapKeep, I'm using pre-made rooms. I don't want to make a unique room for each different LOC value so instead I've decided to cluster them. DBSCAN is a method for clustering values based on their proximity. [This video by StatQuest with Josh Starmer](https://www.youtube.com/watch?v=RDZUdRSDOok) explains how DBSCAN works. There are some online tools to perform DBSCAN analysis so I took the line counts for each class (collected using ndepend) and put them into a spreadsheet.
@@ -36,7 +36,7 @@ Next I wanted to know how many connections each class has. A "connection" here m
 
 | Class	            | Connection points |
 | ----------------- | ----------------- |
-| Bloomcomponent	| 3                 |
+| BloomComponent	| 3                 |
 | BloomSettings	    | 3                 |
 | Grid	            | 2                 |
 | GameRoot	        | 12                |
@@ -57,4 +57,4 @@ Next I wanted to know how many connections each class has. A "connection" here m
 | Extensions	    | 6                 |
 | Art	            | 7                 |
 
-The class with the largest number of connections is `GameRoot` with 12 connections. In theory that means I should be able to build the entire level using single room with 12 connection points.
+The class with the largest number of connections is `GameRoot` with 12 connections. In theory that means I should be able to build the entire level using a single room with 12 connection points.

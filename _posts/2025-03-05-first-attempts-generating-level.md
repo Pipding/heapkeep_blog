@@ -27,7 +27,7 @@ This is better, but what the hell is that??
   <img src="{{ "/assets/images/2025-03-05-da_neonshooter_abhorrent.png" | relative_url }}" alt="An automatically-generated graph where dozens of nodes have been piled on top of one another" style="max-width: 100%; height: auto;">
 </p>
 
-After painstakingly picking apart that pile of nodes, I *think* dungeon architect just has problems with going back 'upstream', so to speak. All of the troublesome nodes seem to come from places where the arrows point left instead of right. This is what a cleaned up version of the graph looks like:
+After painstakingly picking apart that pile of nodes, I *think* Dungeon Architect just has problems with going back 'upstream', so to speak. All of the troublesome nodes seem to come from places where the arrows point left instead of right. This is what a cleaned up version of the graph looks like:
 <p style="text-align: center;">
   <img src="{{ "/assets/images/2025-03-05-da_neonshooter_abhorrent_cleaned.png" | relative_url }}" alt="An automatically-generated dependency graph with manual tweaks to fix errors introduced by auto-generation" style="max-width: 100%; height: auto;">
 </p>
